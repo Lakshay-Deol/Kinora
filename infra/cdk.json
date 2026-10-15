@@ -1,0 +1,16 @@
+{
+  "app": ".venv\\Scripts\\python.exe app.py",
+  "context": {
+    "bedrockModelId": "us.amazon.nova-2-lite-v1:0",
+    "bedrockFailoverRegion": "us-west-2",
+    "webOrigins": "http://localhost:3000,https://<YOUR_AMPLIFY_APP_ID>.amplifyapp.com,https://<YOUR_AMPLIFY_APP_ID>.amplifyapp.com",
+    "escalationContactTimeout": 180,
+    "investigationWindowMin": 15,
+    "wakeGraceMin": 15,
+    "provisionedConcurrency": 0,
+    "transcribeMode": "identify",
+    "pollyVoice": "Kajal",
+    "pollyEngine": "generative",
+    "architecture": "arm64"
+  }
+}
