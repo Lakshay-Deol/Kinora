@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Kinora">
+  <defs>
+    <linearGradient id="kinora-grad" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8"/>
+      <stop offset="50%" stopColor="#818CF8"/>
+      <stop offset="100%" stopColor="#F43F5E"/>
+    </linearGradient>
+    <radialGradient id="kinora-glow" cx="256" cy="256" r="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" stop-opacity="0.18"/>
+      <stop offset="60%" stopColor="#818CF8" stop-opacity="0.08"/>
+      <stop offset="100%" stopColor="#0A0E1A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#0A0E1A"/>
+  <circle cx="256" cy="256" r="220" fill="url(#kinora-glow)"/>
+  <!-- Ambient Orbit -->
+  <circle cx="256" cy="256" r="184" fill="none" stroke="url(#kinora-grad)" stroke-width="16" stroke-linecap="round" stroke-dasharray="880 200"/>
+  <!-- Beacon -->
+  <circle cx="384" cy="128" r="32" fill="#38BDF8" fill-opacity="0.2"/>
+  <circle cx="384" cy="128" r="16" fill="#38BDF8"/>
+  <!-- Central K Crest -->
+  <g fill="none" stroke="url(#kinora-grad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 144v224"/>
+    <path d="M200 266l128-112"/>
+    <path d="M232 238l112 130"/>
+  </g>
+</svg>
