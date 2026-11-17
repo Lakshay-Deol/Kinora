@@ -49,8 +49,6 @@ async def rewrite_kinora_path(request: Request, call_next):
     path = request.scope.get("path", "")
     if path.startswith("/kinora/"):
         request.scope["path"] = "/ally/" + path[len("/kinora/"):]
-    elif path.startswith("/suraksha/"):
-        request.scope["path"] = "/ally/" + path[len("/suraksha/"):]
     return await call_next(request)
 
 app.add_middleware(
